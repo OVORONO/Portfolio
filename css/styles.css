@@ -410,24 +410,9 @@ body.has-fixed-header {
   transform: scale(1.02);
 }
 
-/* ——— Контакты на главной ——— */
-.contact-block__title {
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
-  text-align: center;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-
 .projects-page-title {
   margin-bottom: 2rem;
   text-transform: uppercase;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
 }
 
 /* ——— Футер ——— */
