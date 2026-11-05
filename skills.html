@@ -16,7 +16,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Montserrat+Alternates:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Montserrat+Alternates:wght@500&family=JetBrains+Mono:wght@400&display=swap" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <title>Обо мне — Вячеслав Шапран</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -58,68 +58,60 @@
         </p>
       </section>
 
-      <section class="section">
+      <section class="section section--tight-top">
         <div class="wrap">
-          <div class="skills-grid">
-            <article class="skill-card">
-              <div class="skill-icon skill-icon--a1">
-                <img loading="lazy" class="skill-icon__img" src="images/python.svg" alt="" />
-              </div>
-              <h3 class="skill-desc-title">Python</h3>
-              <p>
-                Основной язык: пишу на нём серверную часть приложений и логику работы с данными.
-              </p>
-            </article>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Бэкенд</h3>
+            <div class="skills-grid">
+              <article class="skill-card skill-card--main">
+                <img loading="lazy" class="skill-card__img" src="images/python.svg" alt="" />
+                <div>
+                  <h4>Python</h4>
+                  <p>Основной язык: пишу на нём серверную часть приложений и логику работы с данными.</p>
+                </div>
+              </article>
+              <article class="skill-card">
+                <img loading="lazy" class="skill-card__img" src="images/sql.webp" alt="" />
+                <div>
+                  <h4>MySQL</h4>
+                  <p>Использую MySQL для хранения данных и написания запросов, связываю базу с серверной частью.</p>
+                </div>
+              </article>
+            </div>
+          </div>
 
-            <article class="skill-card">
-              <div class="skill-icon skill-icon--a2">
-                <img loading="lazy" class="skill-icon__img" src="images/sql.webp" alt="" />
-              </div>
-              <h3 class="skill-desc-title">MySQL</h3>
-              <p>
-                Использую MySQL для хранения данных и написания запросов, связываю базу с серверной частью.
-              </p>
-            </article>
-
-            <article class="skill-card">
-              <div class="skill-icon skill-icon--a1">
-                <img loading="lazy" class="skill-icon__img" src="images/html.webp" alt="" />
-              </div>
-              <h3 class="skill-desc-title">HTML</h3>
-              <p>
-                Использую для вёрстки структуры страниц и компонентов, чтобы создать понятный и доступный интерфейс.
-              </p>
-            </article>
-
-            <article class="skill-card">
-              <div class="skill-icon skill-icon--a2">
-                <img loading="lazy" class="skill-icon__img" src="images/css.webp" alt="" />
-              </div>
-              <h3 class="skill-desc-title">CSS</h3>
-              <p>
-                Применяю для стилизации и адаптивной вёрстки, чтобы интерфейс выглядел аккуратно на всех устройствах.
-              </p>
-            </article>
-
-            <article class="skill-card">
-              <div class="skill-icon skill-icon--a1">
-                <img loading="lazy" class="skill-icon__img" src="images/js.webp" alt="" />
-              </div>
-              <h3 class="skill-desc-title">JavaScript</h3>
-              <p>
-                Использую для добавления интерактивности: обрабатываю события, формы, динамический контент и анимации.
-              </p>
-            </article>
-
-            <article class="skill-card">
-              <div class="skill-icon skill-icon--a2">
-                <img loading="lazy" class="skill-icon__img" src="images/react.webp" alt="" />
-              </div>
-              <h3 class="skill-desc-title">React</h3>
-              <p>
-                Работаю с React, чтобы собирать приложения из переиспользуемых компонентов и удобно управлять состоянием.
-              </p>
-            </article>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Интерфейс</h3>
+            <div class="skills-grid">
+              <article class="skill-card">
+                <img loading="lazy" class="skill-card__img" src="images/html.webp" alt="" />
+                <div>
+                  <h4>HTML</h4>
+                  <p>Использую для вёрстки структуры страниц и компонентов, чтобы создать понятный и доступный интерфейс.</p>
+                </div>
+              </article>
+              <article class="skill-card">
+                <img loading="lazy" class="skill-card__img" src="images/css.webp" alt="" />
+                <div>
+                  <h4>CSS</h4>
+                  <p>Применяю для стилизации и адаптивной вёрстки, чтобы интерфейс выглядел аккуратно на всех устройствах.</p>
+                </div>
+              </article>
+              <article class="skill-card">
+                <img loading="lazy" class="skill-card__img" src="images/js.webp" alt="" />
+                <div>
+                  <h4>JavaScript</h4>
+                  <p>Использую для добавления интерактивности: обрабатываю события, формы, динамический контент и анимации.</p>
+                </div>
+              </article>
+              <article class="skill-card">
+                <img loading="lazy" class="skill-card__img" src="images/react.webp" alt="" />
+                <div>
+                  <h4>React</h4>
+                  <p>Работаю с React, чтобы собирать приложения из переиспользуемых компонентов и удобно управлять состоянием.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>

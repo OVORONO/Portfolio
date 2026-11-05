@@ -2,15 +2,19 @@
 
 :root {
   --bg: #fbfbfb;
-  --gr: gray;
-  --text: #060606;
+  --surface: #ffffff;
+  --dark: #0b0d10;
+  --text: #101317;
+  --muted: #5b6470;
+  --line: #dcdfe4;
+  --line-strong: #9aa1ab;
   --accent-1: #66ccff;
   --accent-1-text: #0077b3; /* тот же голубой, но читаемый на светлом фоне */
-  --accent-2: #ff99cc;
-  --border-thick: 4px solid var(--text);
-  --border-thin: 1px solid var(--gr);
+  --radius: 0.75rem;
+  --border: 1px solid var(--line);
   --font-body: "Montserrat", system-ui, sans-serif;
   --font-accent: "Montserrat Alternates", "Montserrat", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
   --header-height: 56px;
 }
 
@@ -62,7 +66,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.25;
   margin: 0 0 0.75rem;
 }
@@ -78,6 +82,10 @@ h2 {
 
 h3 {
   font-size: clamp(1.1rem, 2vw, 1.25rem);
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -118,10 +126,8 @@ p {
 .nav-main a {
   display: inline-block;
   padding: 0.5rem 0;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
 .nav-main a.is-active {
@@ -187,15 +193,13 @@ body.has-fixed-header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  padding: 0.85rem 1.75rem;
-  border-radius: 999px;
-  border: var(--border-thick);
-  background: var(--bg);
-  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  border: 2px solid var(--text);
+  background: var(--text);
+  color: var(--bg);
   cursor: pointer;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
@@ -206,13 +210,10 @@ body.has-fixed-header {
   color: var(--text);
 }
 
-.btn-pill--accent {
-  border-color: var(--accent-2);
-}
-
-.btn-pill--accent:hover {
-  background: var(--accent-2);
-  border-color: var(--accent-2);
+.btn-pill--secondary {
+  background: transparent;
+  border-color: var(--line-strong);
+  color: var(--text);
 }
 
 /* ——— Hero ——— */
@@ -291,10 +292,24 @@ body.has-fixed-header {
   gap: 0.75rem;
 }
 
-.hero-actions__ghost {
-  background: transparent;
+.hero-actions .btn-pill {
+  background: #ffffff;
   border-color: #ffffff;
+  color: var(--text);
+}
+
+.hero-actions .btn-pill:hover {
+  background: var(--accent-1);
+  border-color: var(--accent-1);
+}
+
+.hero-actions .hero-actions__ghost {
+  background: transparent;
   color: #ffffff;
+}
+
+.hero-actions .hero-actions__ghost:hover {
+  color: var(--text);
 }
 
 /* ——— Кому адресован сайт ——— */
@@ -309,9 +324,9 @@ body.has-fixed-header {
   flex-direction: column;
   align-items: flex-start;
   padding: 1.75rem;
-  border: var(--border-thin);
-  border-radius: 1.25rem;
-  background: linear-gradient(135deg, rgba(102, 204, 255, 0.1) 0%, rgba(255, 153, 204, 0.1) 100%);
+  border: var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
 }
 
 .audience-card p {
@@ -322,18 +337,18 @@ body.has-fixed-header {
 .project-badge {
   display: inline-block;
   margin-bottom: 0.75rem;
-  padding: 0.2rem 0.75rem;
-  border: 2px solid var(--accent-1);
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  padding: 0.15rem 0.6rem;
+  border: var(--border);
+  border-radius: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
 }
 
 .project-badge--accent {
-  border-color: var(--accent-2);
-  background: rgba(255, 153, 204, 0.18);
+  border-color: var(--accent-1-text);
+  background: rgba(102, 204, 255, 0.15);
+  color: var(--accent-1-text);
 }
 
 .project-links {
@@ -346,8 +361,9 @@ body.has-fixed-header {
   max-width: 620px;
   margin: 0 auto 3.5rem;
   padding: 1.25rem 1.5rem;
-  border: 2px dashed var(--gr);
-  border-radius: 1.25rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  color: var(--muted);
   text-align: center;
 }
 
@@ -389,9 +405,10 @@ body.has-fixed-header {
 }
 
 .project-row__subtitle {
+  font-family: var(--font-mono);
   font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--muted);
   margin-bottom: 1rem;
 }
 
@@ -399,12 +416,11 @@ body.has-fixed-header {
 .preview-box,
 .featured-preview {
   aspect-ratio: 2 / 1;
-  border: var(--border-thin);
-  border-radius: 1.25rem;
+  border: var(--border);
+  border-radius: var(--radius);
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(102, 204, 255, 0.12) 0%, rgba(255, 153, 204, 0.12) 100%);
-  transform-origin: center;
-  transition: transform 0.25s ease;
+  background: var(--surface);
+  transition: border-color 0.2s;
 }
 
 .preview-box a,
@@ -421,20 +437,19 @@ body.has-fixed-header {
 }
 
 .preview-box:hover {
-  transform: scale(1.04);
+  border-color: var(--accent-1-text);
 }
 
 .projects-page-title {
   margin-bottom: 2rem;
-  text-transform: uppercase;
 }
 
 /* ——— Футер ——— */
 .site-footer {
-  border-top: 1px solid var(--text);
   margin-top: 2rem;
   padding: 2rem 1.5rem 2.5rem;
-  background: linear-gradient(45deg, rgb(102, 204, 255) 1%, rgb(255, 153, 204) 86%, rgb(102, 204, 255) 100%);
+  background: var(--dark);
+  color: #e8eaed;
 }
 
 .site-footer__inner {
@@ -463,9 +478,9 @@ body.has-fixed-header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 2px solid var(--accent-1);
-  background: var(--bg);
-  transition: background 0.2s, border-color 0.2s;
+  border: 2px solid transparent;
+  background: #ffffff;
+  transition: border-color 0.2s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -477,18 +492,7 @@ body.has-fixed-header {
   object-fit: contain;
 }
 
-.social-circle:nth-child(1):hover {
-  background: var(--accent-1);
-  border-color: var(--accent-1);
-}
-
-.social-circle:nth-child(2):hover {
-  background: var(--accent-2);
-  border-color: var(--accent-2);
-}
-
-.social-circle:nth-child(3):hover {
-  background: var(--accent-1);
+.social-circle:hover {
   border-color: var(--accent-1);
 }
 
@@ -497,21 +501,16 @@ body.has-fixed-header {
   flex-wrap: wrap;
   gap: 0.75rem 1rem;
   justify-content: flex-end;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 .footer-right a:hover {
-  color: var(--text);
-  text-decoration: underline;
+  color: var(--accent-1);
 }
 
-/* на цветном фоне футера голубой не читается, поэтому активный пункт выделен чертой */
 .footer-right a.is-active {
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  color: var(--accent-1);
 }
 
 /* ——— Страница «Обо мне» ——— */
@@ -522,7 +521,7 @@ body.has-fixed-header {
 }
 
 .about-photo img {
-  border-radius: 1.25rem;
+  border-radius: var(--radius);
   max-height: 480px;
   width: auto;
 }
@@ -536,76 +535,67 @@ body.has-fixed-header {
 
 .page-hero h2 {
   margin-bottom: 0.75rem;
-  text-transform: uppercase;
 }
 
 .page-hero .lead {
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted);
   margin-bottom: 1rem;
-  letter-spacing: 0.02em;
+}
+
+.skill-group {
+  max-width: 1000px;
+  margin: 0 auto 2.5rem;
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group__title {
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 2rem;
-  justify-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .skill-card {
-  max-width: 280px;
-  text-align: center;
-}
-
-.skill-card h3 {
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
-}
-
-.skill-icon {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 1.25rem;
-  border: var(--border-thick);
-  border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.75rem;
-  background: var(--bg);
-  transition: transform 0.2s ease;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  border: var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
 }
 
-.skill-icon--a1 {
-  border-color: var(--accent-1);
+.skill-card--main {
+  border-color: var(--accent-1-text);
 }
 
-.skill-icon--a2 {
-  border-color: var(--accent-2);
-}
-
-.skill-icon__img {
-  width: 68%;
-  height: 68%;
+.skill-card__img {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 
-.skill-card:hover .skill-icon {
-  transform: scale(1.04);
-}
-
-.skill-desc-title {
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+.skill-card h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
 }
 
 .skill-card p {
+  margin: 0;
   font-size: 0.9rem;
 }
 
@@ -619,15 +609,15 @@ body.has-fixed-header {
 }
 
 .featured-project__title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  text-transform: uppercase;
 }
 
 .featured-project .label {
+  font-family: var(--font-mono);
   font-size: 0.8rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--muted);
   margin-bottom: 0.75rem;
 }
 
@@ -638,7 +628,6 @@ body.has-fixed-header {
 .other-projects__title {
   text-align: center;
   margin-bottom: 2.5rem;
-  text-transform: uppercase;
 }
 
 .projects-list {
@@ -665,9 +654,10 @@ body.has-fixed-header {
 }
 
 .project-card .label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted);
   margin-bottom: 0.5rem;
 }
 
@@ -677,17 +667,17 @@ body.has-fixed-header {
 
 .project-card__img {
   aspect-ratio: 2 / 1;
-  border: 2px solid var(--text);
-  border-radius: 1.25rem;
+  border: var(--border);
+  border-radius: var(--radius);
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
-  background: var(--bg);
-  transition: transform 0.25s ease;
+  background: var(--surface);
+  transition: border-color 0.2s;
 }
 
 .project-card:hover .project-card__img {
-  transform: scale(1.03);
+  border-color: var(--accent-1-text);
 }
 
 .project-card__img img {
@@ -703,7 +693,7 @@ body.has-fixed-header {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 2px solid var(--accent-2);
+  border: var(--border);
   background: var(--bg);
   display: inline-flex;
   align-items: center;
@@ -741,8 +731,8 @@ body.has-fixed-header {
   aspect-ratio: 2 / 1;
   object-fit: cover;
   object-position: top;
-  border-radius: 1.25rem;
-  border: 2px solid var(--text);
+  border-radius: var(--radius);
+  border: var(--border);
 }
 
 .project-description {
@@ -772,7 +762,6 @@ body.has-fixed-header {
 
 .contact-hero h1 {
   margin-bottom: 1.25rem;
-  text-transform: uppercase;
 }
 
 .contact-hero p {
@@ -818,12 +807,11 @@ a.alert-box:hover {
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: var(--surface);
+  border-radius: var(--radius);
   max-width: 320px;
-  color: #333;
-  border: 1px solid #e0e0e0;
+  color: var(--text);
+  border: var(--border);
 }
 
 .alert-icon {
@@ -839,10 +827,6 @@ a.alert-box:hover {
 
 /* ——— Адаптив ——— */
 @media (max-width: 900px) {
-  .skills-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .alert-wrapper--contacts {
     grid-template-columns: minmax(0, 320px);
     justify-content: center;
@@ -896,7 +880,7 @@ a.alert-box:hover {
   }
 
   .nav-main a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .alert-box {
@@ -912,8 +896,7 @@ a.alert-box:hover {
 
   .preview-box,
   .featured-preview,
-  .project-card__img,
-  .skill-icon {
+  .project-card__img {
     transition: none;
   }
 }
