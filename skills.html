@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Вячеслав Шапран, frontend-разработчик: обо мне и навыки — HTML, CSS, JavaScript, React, MySQL." />
+    <meta name="description" content="Вячеслав Шапран, Python-разработчик: обо мне и навыки — Python, MySQL, HTML, CSS, JavaScript, React." />
     <meta property="og:title" content="Обо мне — Вячеслав Шапран" />
-    <meta property="og:description" content="Вячеслав Шапран, frontend-разработчик: обо мне и навыки — HTML, CSS, JavaScript, React, MySQL." />
+    <meta property="og:description" content="Вячеслав Шапран, Python-разработчик: обо мне и навыки — Python, MySQL, HTML, CSS, JavaScript, React." />
     <meta property="og:type" content="website" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <title>Обо мне — Вячеслав Шапран</title>
@@ -33,10 +33,8 @@
                 <img loading="lazy" src="images/me.PNG" alt="Вячеслав Шапран, портрет в профиль" />
           </div>
           <p>
-            Я — фронтенд-разработчик со страстью к созданию красивых, удобных и отзывчивых веб-интерфейсов.
-            Обладаю опытом работы с современными технологиями, такими как HTML, CSS, JavaScript, React и другими популярными фреймворками.
-            Для меня важно не только писать код, но и учитывать пользовательский опыт, создавать интерфейсы, которые удобно использовать.
-            Всегда открыт к новым вызовам и с удовольствием воплощаю ваши идеи в реальность.
+            Я Python-разработчик. Пишу серверную часть приложений и сам верстаю интерфейсы к ней, поэтому могу вести задачу от логики и данных до готового экрана.
+            Ищу работу в штате, а также беру заказы на разработку.
           </p>
         </div>
 
@@ -47,7 +45,7 @@
         <h2>Мои навыки</h2>
         <p class="lead">Почему эти навыки и как я их использую</p>
         <p>
-          Для того, чтобы быть хорошим фронтенд-разработчиком, необходимо иметь при себе сразу множество навыков. Вот некоторые из них.
+          Основной инструмент для бэкенда, база данных и всё, что нужно для интерфейса.
         </p>
       </section>
 
@@ -55,61 +53,64 @@
         <div class="wrap">
           <div class="skills-grid">
             <article class="skill-card">
-              <h3>Навык #1</h3>
+              <div class="skill-icon skill-icon--a1">
+                <img loading="lazy" class="skill-icon__img" src="images/python.svg" alt="Python" />
+              </div>
+              <h3 class="skill-desc-title">Python</h3>
+              <p>
+                Основной язык: пишу на нём серверную часть приложений и логику работы с данными.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-icon skill-icon--a2">
+                <img loading="lazy" class="skill-icon__img" src="images/sql.png" alt="SQL" />
+              </div>
+              <h3 class="skill-desc-title">MySQL</h3>
+              <p>
+                Использую MySQL для хранения данных и написания запросов, связываю базу с серверной частью.
+              </p>
+            </article>
+
+            <article class="skill-card">
               <div class="skill-icon skill-icon--a1">
                 <img loading="lazy" class="skill-icon__img" src="images/html.png" alt="HTML" />
               </div>
-              <p class="skill-desc-title">HTML</p>
+              <h3 class="skill-desc-title">HTML</h3>
               <p>
                 Использую для верстки структуры страниц и компонентов, чтобы создать понятный и доступный интерфейс.
               </p>
             </article>
 
             <article class="skill-card">
-              <h3>Навык #2</h3>
               <div class="skill-icon skill-icon--a2">
                 <img loading="lazy" class="skill-icon__img" src="images/css.png" alt="CSS" />
               </div>
-              <p class="skill-desc-title">CSS</p>
+              <h3 class="skill-desc-title">CSS</h3>
               <p>
                 Применяю для стилизации и адаптивной верстки, чтобы интерфейс выглядел аккуратно на всех устройствах.
               </p>
             </article>
 
             <article class="skill-card">
-              <h3>Навык #3</h3>
               <div class="skill-icon skill-icon--a1">
                 <img loading="lazy" class="skill-icon__img" src="images/js.png" alt="JavaScript" />
               </div>
-              <p class="skill-desc-title">JS</p>
+              <h3 class="skill-desc-title">JS</h3>
               <p>
                 Использую для добавления интерактивности: обрабатываю события, формы, динамический контент и анимации.
               </p>
             </article>
 
-            <div class="skills-grid__row2">
-              <article class="skill-card">
-                <h3>Навык #4</h3>
-                <div class="skill-icon skill-icon--a2">
-                  <img loading="lazy" class="skill-icon__img" src="images/react.png" alt="React" />
-                </div>
-                <p class="skill-desc-title">React</p>
-                <p>
-                  Работаю с React, чтобы собирать приложения из переиспользуемых компонентов и удобно управлять состоянием.
-                </p>
-              </article>
-
-              <article class="skill-card">
-                <h3>Навык #5</h3>
-                <div class="skill-icon skill-icon--a1">
-                  <img loading="lazy" class="skill-icon__img" src="images/sql.png" alt="SQL" />
-                </div>
-                <p class="skill-desc-title">MySQL</p>
-                <p>
-                  Использую MySQL для работы с данными и написания запросов, поддерживая связку с бэкенд‑сервисами.
-                </p>
-              </article>
-            </div>
+            <article class="skill-card">
+              <div class="skill-icon skill-icon--a2">
+                <img loading="lazy" class="skill-icon__img" src="images/react.png" alt="React" />
+              </div>
+              <h3 class="skill-desc-title">React</h3>
+              <p>
+                Работаю с React, чтобы собирать приложения из переиспользуемых компонентов и удобно управлять состоянием.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -121,14 +122,14 @@
           <span>© 2026 Вячеслав Шапран</span>
         </div>
         <div class="footer-center">
-          <a class="social-circle" href="#" aria-label="Telegram">
+          <a class="social-circle" href="https://t.me/Vorono_O" target="_blank" rel="noopener" aria-label="Telegram">
             <img loading="lazy" src="images/tg.png" alt="" />
           </a>
-          <a class="social-circle" href="#" aria-label="VK">
-            <img loading="lazy" src="images/vk.png" alt="" />
+          <a class="social-circle" href="https://github.com/OVORONO" target="_blank" rel="noopener" aria-label="GitHub">
+            <img loading="lazy" src="images/github.svg" alt="" />
           </a>
-          <a class="social-circle" href="#" aria-label="YouTube">
-            <img loading="lazy" src="images/youtube.png" alt="" />
+          <a class="social-circle" href="mailto:ovorono.contact@yandex.ru" aria-label="Почта">
+            <img loading="lazy" src="images/email.png" alt="" />
           </a>
         </div>
         <nav class="footer-right" aria-label="Подвал">

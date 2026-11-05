@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Портфолио Вячеслава Шапрана, frontend-разработчика: проекты, навыки и контакты." />
-    <meta property="og:title" content="Вячеслав Шапран — frontend-разработчик" />
-    <meta property="og:description" content="Портфолио Вячеслава Шапрана, frontend-разработчика: проекты, навыки и контакты." />
+    <meta name="description" content="Портфолио Вячеслава Шапрана, Python-разработчика: проекты, навыки и контакты." />
+    <meta property="og:title" content="Вячеслав Шапран — Python-разработчик" />
+    <meta property="og:description" content="Портфолио Вячеслава Шапрана, Python-разработчика: проекты, навыки и контакты." />
     <meta property="og:type" content="website" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-    <title>Вячеслав Шапран — frontend-разработчик</title>
+    <title>Вячеслав Шапран — Python-разработчик</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="has-fixed-header">
@@ -32,8 +32,12 @@
             <img id="heroMe" src="images/iam.jpg" alt="" />
           </div>
           <div class="hero-content">
-            <h1 class="hero-overlay-text"><span class="hero-overlay-text-add">Вячеслав Шапран</span> Frontend-разработчик со стажем.</h1>
-            <a class="btn-pill hero-cta" href="projects.html">Смотреть проекты</a>
+            <h1 class="hero-overlay-text"><span class="hero-overlay-text-add">Вячеслав Шапран</span> Python-разработчик</h1>
+            <p class="hero-tagline">Пишу бэкенд и верстаю интерфейсы к нему</p>
+            <div class="hero-actions">
+              <a class="btn-pill" href="projects.html">Смотреть проекты</a>
+              <a class="btn-pill hero-actions__ghost" href="https://t.me/Vorono_O" target="_blank" rel="noopener">Написать в Telegram</a>
+            </div>
           </div>
         </div>
       </section>
@@ -42,59 +46,72 @@
         <div class="wrap text-center">
           <h2 class="section-heading">Немного обо мне</h2>
           <p>
-            Я — фронтенд-разработчик со страстью к созданию красивых, удобных и отзывчивых веб-интерфейсов.
-            Обладаю опытом работы с современными технологиями, такими как HTML, CSS, JavaScript, React и другими популярными фреймворками.
-            Для меня важно не только писать код, но и учитывать пользовательский опыт, создавать интерфейсы, которые удобно использовать.
-            Всегда открыт к новым вызовам и с удовольствием воплощаю ваши идеи в реальность.
+            Я Python-разработчик. Пишу серверную часть приложений и сам верстаю интерфейсы к ней, поэтому могу вести задачу от логики и данных до готового экрана.
           </p>
         </div>
 
         <div class="alert-wrapper">
           <div class="alert-box">
             <img loading="lazy" class="alert-icon" src="images/check.png" alt="" />
-            <div class="alert-text">25+ выполненных заказов</div>
+            <div class="alert-text">1 выполненный заказ</div>
           </div>
           <div class="alert-box">
             <img loading="lazy" class="alert-icon" src="images/human.png" alt="" />
-            <div class="alert-text">20 довольных клиентов</div>
+            <div class="alert-text">1 довольный клиент</div>
           </div>
         </div>
       </section>
-              
+
+      <section class="section section--tight-bott">
+        <div class="wrap audience-grid">
+          <article class="audience-card">
+            <h2>Работодателям</h2>
+            <p>Ищу работу в штате на позицию Python-разработчика. Примеры кода и проекты лежат на GitHub.</p>
+            <a class="btn-pill" href="https://github.com/OVORONO" target="_blank" rel="noopener">Открыть GitHub</a>
+          </article>
+          <article class="audience-card">
+            <h2>Заказчикам</h2>
+            <p>Также беру заказы на разработку сайтов. Напишите, что нужно сделать, и обсудим задачу.</p>
+            <a class="btn-pill btn-pill--accent" href="contacts.html">Обсудить задачу</a>
+          </article>
+        </div>
+      </section>
+
       <section class="section" id="projects">
         <div class="wrap text-center">
           <h2 class="section-heading">Избранные проекты</h2>
         </div>
         <div class="wrap">
           <div class="project-row">
-            
             <div class="project-row__text">
-              <h3 class="project-row__title">Future Tech</h3>
-              <p class="project-row__subtitle">Последние новости в технологиях</p>
+              <p class="project-badge project-badge--accent">Дипломная работа</p>
+              <h3 class="project-row__title">Ростовская эмаль</h3>
+              <p class="project-row__subtitle">Интернет-магазин ростовской финифти</p>
               <p>
-                Сайт Future Tech обозревает последние новости и события, происходящие в мире науки и технологии, повествует о возможностях в данной сфере и подробно знакомит с миром науки и техники.
+                Каталог с фильтрами, поиск, корзина, избранное и оформление заказа на чистом JavaScript, формы на PHP и свой генератор статических страниц.
               </p>
-              <a class="btn-pill" href="project-1.html">Подробнее о проекте</a>
+              <a class="btn-pill" href="project-finift.html">Подробнее о проекте</a>
             </div>
             <div class="project-row__preview">
               <div class="preview-box">
-                <img loading="lazy" src="images/example_1.png" alt="Главный экран сайта Future Tech" />
+                <img loading="lazy" src="images/finift-home.webp" alt="Главная страница магазина «Ростовская эмаль»" />
               </div>
             </div>
           </div>
 
           <div class="project-row project-row--reverse">
             <div class="project-row__text">
-              <h3 class="project-row__title">Family Tree</h3>
-              <p class="project-row__subtitle">Сервис по созданию генеалогических деревьев</p>
+              <p class="project-badge">Учебный проект</p>
+              <h3 class="project-row__title">Future Tech</h3>
+              <p class="project-row__subtitle">Последние новости в технологиях</p>
               <p>
-                Сайт Family Tree представляет из себя сервис по созданию собственного генеалогического древа, на сайте предоставлены все необходимые возможности для погружения в данную сферу.
+                Новостной сайт о науке и технологиях с разделами новостей, подкастов и ресурсов.
               </p>
-              <a class="btn-pill btn-pill--accent" href="project-2.html">Подробнее о проекте</a>
+              <a class="btn-pill btn-pill--accent" href="project-1.html">Подробнее о проекте</a>
             </div>
             <div class="project-row__preview">
               <div class="preview-box">
-                <img loading="lazy" src="images/example_2.png" alt="Главный экран сайта Family Tree" />
+                <img loading="lazy" src="images/example_1.png" alt="Главный экран сайта Future Tech" />
               </div>
             </div>
           </div>
@@ -103,14 +120,12 @@
 
       <section class="section" id="contact">
         <div class="wrap">
-          <h2 class="contact-block__title">Оставьте контактные данные</h2>
-          <form class="form-inline" action="#" method="post">
-            <label class="visually-hidden" for="name">Имя</label>
-            <input class="input-pill" id="name" name="name" type="text" placeholder="Имя" autocomplete="name" required />
-            <label class="visually-hidden" for="email">Email</label>
-            <input class="input-pill" id="email" name="email" type="email" placeholder="Email" autocomplete="email" required />
-            <button class="btn-submit" type="submit">Отправить</button>
-          </form>
+          <h2 class="contact-block__title">Связаться со мной</h2>
+          <div class="contact-links">
+            <a class="btn-pill" href="https://t.me/Vorono_O" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn-pill btn-pill--accent" href="mailto:ovorono.contact@yandex.ru">Почта</a>
+            <a class="btn-pill" href="https://github.com/OVORONO" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
       </section>
     </main>
@@ -121,14 +136,14 @@
           <span>© 2026 Вячеслав Шапран</span>
         </div>
         <div class="footer-center">
-          <a class="social-circle" href="#" aria-label="Telegram">
+          <a class="social-circle" href="https://t.me/Vorono_O" target="_blank" rel="noopener" aria-label="Telegram">
             <img loading="lazy" src="images/tg.png" alt="" />
           </a>
-          <a class="social-circle" href="#" aria-label="VK">
-            <img loading="lazy" src="images/vk.png" alt="" />
+          <a class="social-circle" href="https://github.com/OVORONO" target="_blank" rel="noopener" aria-label="GitHub">
+            <img loading="lazy" src="images/github.svg" alt="" />
           </a>
-          <a class="social-circle" href="#" aria-label="YouTube">
-            <img loading="lazy" src="images/youtube.png" alt="" />
+          <a class="social-circle" href="mailto:ovorono.contact@yandex.ru" aria-label="Почта">
+            <img loading="lazy" src="images/email.png" alt="" />
           </a>
         </div>
         <nav class="footer-right" aria-label="Подвал">
