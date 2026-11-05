@@ -2,17 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Проект 1 – Future Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Family Tree: описание проекта и скриншоты из портфолио Вячеслава Шапрана." />
+    <meta property="og:title" content="Family Tree — проект Вячеслава Шапрана" />
+    <meta property="og:description" content="Family Tree: описание проекта и скриншоты из портфолио Вячеслава Шапрана." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <title>Family Tree — проект Вячеслава Шапрана</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="has-fixed-header">
   <header class="site-header">
     <div class="site-header__inner">
-      <nav class="nav-main">
-        <a href="index.html">Главная</a>
-        <a href="skills.html">Обо мне</a>
-        <a href="projects.html">Проекты</a>
-        <a href="contacts.html">Контакты</a>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-main">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="skills.html">Обо мне</a></li>
+          <li><a href="projects.html" class="is-active">Проекты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -20,13 +28,12 @@
   <main>
 <section class="section section--tight-bott">
         <div class="wrap text-center">
-          <h1 class="projects-page-title">Проект #2</h1>
+          <h1 class="projects-page-title">Family Tree</h1>
         </div>
         <div class="wrap">
           <div class="featured-project">
             <div>
-              <h2>Family Tree</h2>
-              <p class="label">Сервис по созданию генеологических деревьев</p>
+              <p class="label">Сервис по созданию генеалогических деревьев</p>
               <p>
                 Я разработал сайт Family Tree как платформу для создания семейного генеалогического древа.
               </p>
@@ -37,11 +44,11 @@
                 Система уведомлений, экспорт в PDF и мощная база данных демонстрируют мои профессиональные навыки в full-stack разработке.
               </p>
               <p class="featured-project__actions">
-                <a class="btn-pill" href="#">Ссылка</a>
+                <a class="btn-pill" href="#">Открыть сайт</a>
               </p>
             </div>
             <div class="featured-preview">
-              <img src="images/example_2.png" alt="Проект #1" />
+              <img loading="lazy" src="images/example_2.png" alt="Главный экран сайта Family Tree" />
             </div>
           </div>
         </div>
@@ -55,21 +62,21 @@
         <div class="project-gallery">
           <h2 class="projects-page-title">Галерея проекта</h2>
           <div class="project-gallery__images">
-            <img src="images/tt1.png" alt="Пример 1" />
-            <img src="images/tt2.png" alt="Пример 2" />
+            <img loading="lazy" src="images/tt1.png" alt="Family Tree: экран 1" />
+            <img loading="lazy" src="images/tt2.png" alt="Family Tree: экран 2" />
           </div>
         </div>
 
         <!-- Описание проекта -->
-        <div class="project-description" style="margin-top: 2.5rem;">
+        <div class="project-description">
           <h2 class="projects-page-title">Описание проекта</h2>
-          <p class="lead" style="max-width: 700px; margin: 0 auto;">
-            Сервис предоставляющий возможности создания и редактирования собственного генеалогического древа, что очень полезно в условиях современного общества.
+          <p class="lead">
+            Сервис, предоставляющий возможности создания и редактирования собственного генеалогического древа, что очень полезно в условиях современного общества.
           </p>
         </div>
 
         <!-- Навигация между проектами -->
-        <div class="project-nav" style="display: flex; justify-content: center; gap: 20px; margin-top: 2.5rem;">
+        <div class="project-nav">
           <a href="project-1.html" class="btn-pill">
             Предыдущий проект
           </a>
@@ -84,23 +91,23 @@
   <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="footer-left">
-          <span>© 2026 Портфолио. Все права защищены.</span>
+          <span>© 2026 Вячеслав Шапран</span>
         </div>
         <div class="footer-center">
           <a class="social-circle" href="#" aria-label="Telegram">
-            <img src="images/tg.png" alt="TG" />
+            <img loading="lazy" src="images/tg.png" alt="" />
           </a>
           <a class="social-circle" href="#" aria-label="VK">
-            <img src="images/vk.png" alt="VK" />
+            <img loading="lazy" src="images/vk.png" alt="" />
           </a>
           <a class="social-circle" href="#" aria-label="YouTube">
-            <img src="images/youtube.png" alt="YouTube" />
+            <img loading="lazy" src="images/youtube.png" alt="" />
           </a>
         </div>
         <nav class="footer-right" aria-label="Подвал">
-          <a href="index.html" class="is-active">Главная</a>
+          <a href="index.html">Главная</a>
           <a href="skills.html">Обо мне</a>
-          <a href="projects.html">Проекты</a>
+          <a href="projects.html" class="is-active">Проекты</a>
           <a href="contacts.html">Контакты</a>
         </nav>
       </div>

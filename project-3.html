@@ -2,17 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Проект 1 – Future Tech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Шапран Delivery: описание проекта и скриншоты из портфолио Вячеслава Шапрана." />
+    <meta property="og:title" content="Шапран Delivery — проект Вячеслава Шапрана" />
+    <meta property="og:description" content="Шапран Delivery: описание проекта и скриншоты из портфолио Вячеслава Шапрана." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <title>Шапран Delivery — проект Вячеслава Шапрана</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="has-fixed-header">
   <header class="site-header">
     <div class="site-header__inner">
-      <nav class="nav-main">
-        <a href="index.html">Главная</a>
-        <a href="skills.html">Обо мне</a>
-        <a href="projects.html">Проекты</a>
-        <a href="contacts.html">Контакты</a>
+      <nav aria-label="Основная навигация">
+        <ul class="nav-main">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="skills.html">Обо мне</a></li>
+          <li><a href="projects.html" class="is-active">Проекты</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -20,15 +28,15 @@
   <main>
 <section class="section section--tight-bott">
         <div class="wrap text-center">
-          <h1 class="projects-page-title">Проект #3</h1>
+          <h1 class="projects-page-title">Шапран Delivery</h1>
         </div>
         <div class="wrap">
           <div class="featured-project">
             <div>
-              <h2>Проект Shapran delivery</h2>
               <p class="label">Сервис доставки вкусной и полезной еды</p>
               <p>
-                Я разработал сайт Shapran delivery как визитную карточку сервиса доставки полезной еды.
+                Я разработал сайт Шапран Delivery как визитную карточку сервиса доставки полезной еды.
+              </p>
               <p>
                 Здесь показаны меню, отзывы клиентов, калькулятор калорий и ссылки на мобильное приложение.
               </p>
@@ -36,11 +44,11 @@
                 Платформа сочетает удобный дизайн, интерактивные элементы и интеграцию с базами данных — полное воплощение моих навыков в веб-разработке.
               </p>
               <p class="featured-project__actions">
-                <a class="btn-pill" href="#">Ссылка</a>
+                <a class="btn-pill" href="#">Открыть сайт</a>
               </p>
             </div>
             <div class="featured-preview">
-              <img src="images/example_3.png" alt="Проект #1" />
+              <img loading="lazy" src="images/example_3.png" alt="Главный экран сайта Шапран Delivery" />
             </div>
           </div>
         </div>
@@ -54,22 +62,22 @@
         <div class="project-gallery">
           <h2 class="projects-page-title">Галерея проекта</h2>
           <div class="project-gallery__images">
-            <img src="images/qq1.png" alt="Пример 1" />
-            <img src="images/qq2.png" alt="Пример 2" />
-            <img src="images/qq3.png" alt="Пример 3" />
+            <img loading="lazy" src="images/qq1.png" alt="Шапран Delivery: экран 1" />
+            <img loading="lazy" src="images/qq2.png" alt="Шапран Delivery: экран 2" />
+            <img loading="lazy" src="images/qq3.png" alt="Шапран Delivery: экран 3" />
           </div>
         </div>
 
         <!-- Описание проекта -->
-        <div class="project-description" style="margin-top: 2.5rem;">
+        <div class="project-description">
           <h2 class="projects-page-title">Описание проекта</h2>
-          <p class="lead" style="max-width: 700px; margin: 0 auto;">
-            Сервис представляет из себя ознакомительный и рекламный сайт предоставляющий информацию о серивисе Shapran Delivery, который доставляет полезную и вкусную еду в основных крупных городах РФ.
+          <p class="lead">
+            Сервис представляет из себя ознакомительный и рекламный сайт, предоставляющий информацию о сервисе Шапран Delivery, который доставляет полезную и вкусную еду в основных крупных городах РФ.
           </p>
         </div>
 
         <!-- Навигация между проектами -->
-        <div class="project-nav" style="display: flex; justify-content: center; gap: 20px; margin-top: 2.5rem;">
+        <div class="project-nav">
           <a href="project-2.html" class="btn-pill">
             Предыдущий проект
           </a>
@@ -84,23 +92,23 @@
   <footer class="site-footer">
       <div class="site-footer__inner">
         <div class="footer-left">
-          <span>© 2026 Портфолио. Все права защищены.</span>
+          <span>© 2026 Вячеслав Шапран</span>
         </div>
         <div class="footer-center">
           <a class="social-circle" href="#" aria-label="Telegram">
-            <img src="images/tg.png" alt="TG" />
+            <img loading="lazy" src="images/tg.png" alt="" />
           </a>
           <a class="social-circle" href="#" aria-label="VK">
-            <img src="images/vk.png" alt="VK" />
+            <img loading="lazy" src="images/vk.png" alt="" />
           </a>
           <a class="social-circle" href="#" aria-label="YouTube">
-            <img src="images/youtube.png" alt="YouTube" />
+            <img loading="lazy" src="images/youtube.png" alt="" />
           </a>
         </div>
         <nav class="footer-right" aria-label="Подвал">
-          <a href="index.html" class="is-active">Главная</a>
+          <a href="index.html">Главная</a>
           <a href="skills.html">Обо мне</a>
-          <a href="projects.html">Проекты</a>
+          <a href="projects.html" class="is-active">Проекты</a>
           <a href="contacts.html">Контакты</a>
         </nav>
       </div>
