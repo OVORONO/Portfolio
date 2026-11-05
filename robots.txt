@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://123-liard-eight-26.vercel.app/sitemap.xml

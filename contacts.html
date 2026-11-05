@@ -7,11 +7,22 @@
     <meta property="og:title" content="Контакты — Вячеслав Шапран" />
     <meta property="og:description" content="Как связаться с Вячеславом Шапраном, Python-разработчиком." />
     <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://123-liard-eight-26.vercel.app/contacts.html" />
+    <meta property="og:url" content="https://123-liard-eight-26.vercel.app/contacts.html" />
+    <meta property="og:image" content="https://123-liard-eight-26.vercel.app/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Montserrat+Alternates:wght@500&display=swap" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
     <title>Контакты — Вячеслав Шапран</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="has-fixed-header">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
     <header class="site-header">
       <div class="site-header__inner">
         <nav aria-label="Основная навигация">
@@ -19,13 +30,13 @@
             <li><a href="index.html">Главная</a></li>
             <li><a href="skills.html">Обо мне</a></li>
             <li><a href="projects.html">Проекты</a></li>
-            <li><a href="contacts.html" class="is-active">Контакты</a></li>
+            <li><a href="contacts.html" class="is-active" aria-current="page">Контакты</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="contact-hero">
         <h1>Способы связи со мной</h1>
         <div>
@@ -35,15 +46,14 @@
         </div>
       </section>
 
-
-       <section class="section">
-          <div class="alert-wrapper">
+       <section class="section section--tight-top">
+          <div class="alert-wrapper alert-wrapper--contacts">
             <a class="alert-box" href="https://t.me/Vorono_O" target="_blank" rel="noopener">
-              <img loading="lazy" class="alert-icon" src="images/tg.png" alt="" />
+              <img loading="lazy" class="alert-icon" src="images/tg.webp" alt="" />
               <div class="alert-text">Telegram: @Vorono_O</div>
             </a>
             <a class="alert-box" href="mailto:ovorono.contact@yandex.ru">
-              <img loading="lazy" class="alert-icon" src="images/email.png" alt="" />
+              <img loading="lazy" class="alert-icon" src="images/email.webp" alt="" />
               <div class="alert-text">ovorono.contact@yandex.ru</div>
             </a>
             <a class="alert-box" href="https://github.com/OVORONO" target="_blank" rel="noopener">
@@ -61,20 +71,20 @@
         </div>
         <div class="footer-center">
           <a class="social-circle" href="https://t.me/Vorono_O" target="_blank" rel="noopener" aria-label="Telegram">
-            <img loading="lazy" src="images/tg.png" alt="" />
+            <img loading="lazy" src="images/tg.webp" alt="" />
           </a>
           <a class="social-circle" href="https://github.com/OVORONO" target="_blank" rel="noopener" aria-label="GitHub">
             <img loading="lazy" src="images/github.svg" alt="" />
           </a>
           <a class="social-circle" href="mailto:ovorono.contact@yandex.ru" aria-label="Почта">
-            <img loading="lazy" src="images/email.png" alt="" />
+            <img loading="lazy" src="images/email.webp" alt="" />
           </a>
         </div>
         <nav class="footer-right" aria-label="Подвал">
           <a href="index.html">Главная</a>
           <a href="skills.html">Обо мне</a>
           <a href="projects.html">Проекты</a>
-          <a href="contacts.html" class="is-active">Контакты</a>
+          <a href="contacts.html" class="is-active" aria-current="page">Контакты</a>
         </nav>
       </div>
     </footer>
