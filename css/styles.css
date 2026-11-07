@@ -898,3 +898,13 @@ a.alert-box:hover {
     transition: none;
   }
 }
+/* Ссылка внутри текста: видна сразу, без наведения */
+.text-link {
+  color: var(--accent-1-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover {
+  color: var(--accent-1);
+}
